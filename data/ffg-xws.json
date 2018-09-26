@@ -399,6 +399,25 @@
     "395": "proximitymines",
     "396": "seismiccharges"
   },
+  "slots": {
+    "1": "talent",
+    "2": "sensor",
+    "3": "cannon",
+    "4": "turret",
+    "5": "torpedo",
+    "6": "missile",
+    "8": "crew",
+    "10": "astromech",
+    "12": "device",
+    "13": "illicit",
+    "14": "modification",
+    "15": "title",
+    "16": "gunner",
+    "17": "forcepower",
+    "18": "configuration",
+    "19": "tech",
+    "999": "special"
+  },
   "factions": { "1": "rebelalliance", "2": "galacticempire", "3": "scumandvillainy" },
   "ships": {
     "1": "modifiedyt1300lightfreighter",

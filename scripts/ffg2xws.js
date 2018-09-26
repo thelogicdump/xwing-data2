@@ -4,7 +4,15 @@ const fs = require('fs');
 const jsonfile = require('jsonfile');
 
 const dataRoot = __dirname + '/../data';
-const ffg2xws = { pilots: {}, upgrades: {}, factions: {}, ships: {}, actions: {}, stats: {} };
+const ffg2xws = { pilots: {}, upgrades: {}, slots: {}, factions: {}, ships: {}, actions: {}, stats: {} };
+
+// Upgrade Slots
+const slotFile = jsonfile.readFileSync(`${dataRoot}/slots/slots.json`);
+slotFile.forEach(slot => {
+  if (slot.xws && slot.ffg) {
+    ffg2xws.slots[slot.ffg] = slot.xws;
+  }
+});
 
 // Upgrades
 const upgradeFiles = fs.readdirSync(`${dataRoot}/upgrades`);
